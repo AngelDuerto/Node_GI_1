@@ -80,7 +80,7 @@ yargs.command({
 })
 
 
-// 
+// edit a note
 yargs.command({
     command: 'edit',
     describe: 'Edit a note',

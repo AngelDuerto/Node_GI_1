@@ -49,12 +49,14 @@ app.get('/weather', (req, res) => {
             error: 'You must provide an address!'
         })
     } 
+    // default unit
+
     geocode(req.query.address, (error, { latitude, longitude, location} = {}) => {
         if (error) {
             return res.send({ error })
         }
 
-        forecast(latitude, longitude, (error, forecastData) => {
+        forecast(latitude, longitude, req.query.temperature, (error, forecastData) => {
             if (error) {
                 return res.send({ error })
             }
@@ -85,7 +87,7 @@ app.get('/products', (req, res) => {
 app.get('/help/*', (req, res) => {
     res.render('404', {
         title: '404',
-        name: 'Andrew Mead',
+        name1: 'Angel Duerto',
         errorMessage: 'Help article not found.'
     })
 })

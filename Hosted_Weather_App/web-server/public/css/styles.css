@@ -43,8 +43,11 @@ header a {
 }
 
 #mainText{
+    padding-bottom: 10px;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 60px;
+    font-size: 18px;
+    border-bottom: 1px solid grey;
 }
 
 #message-1{
@@ -67,7 +70,8 @@ form{
 }
 input {
     border: 1px solid #cccccc;
-    padding: 8px;
+    padding: 9px;
+    background-color: white;
 }
 
 button {
@@ -76,4 +80,15 @@ button {
     background-color: #888888;
     color: white;
     padding: 8px;
+}
+
+#temperature{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+#helpTxt{
+    font-size: 20px;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
 }
