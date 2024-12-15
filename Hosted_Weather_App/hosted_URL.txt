@@ -1,1 +1,1 @@
-https://weatherappr2h.onrender.com (weather app)
+https://weatherapp-qiou.onrender.com (weather app)
